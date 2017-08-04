@@ -1,7 +1,7 @@
 package car.dealer.dtoModels;
 
-import com.google.gson.annotations.Expose;
 
+import com.google.gson.annotations.Expose;
 
 public class SupplierImportDto {
 
@@ -26,6 +26,6 @@ public class SupplierImportDto {
     }
 
     public void setImporter(Boolean importer) {
-        isImporter = importer;
+        this.isImporter = isImporter;
     }
 }

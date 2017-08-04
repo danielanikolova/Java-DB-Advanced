@@ -1,6 +1,4 @@
 package car.dealer.entities;
-
-
 import javax.persistence.*;
 import java.util.Set;
 
@@ -36,12 +34,12 @@ public class Supplier {
     }
 
     @Column(name = "is_importer")
-    public Boolean getIsImporter() {
+    public Boolean getImporter() {
         return isImporter;
     }
 
-    public void setIsImporter(Boolean usesImportedParts) {
-        this.isImporter = usesImportedParts;
+    public void setImporter(Boolean importer) {
+        this.isImporter = isImporter;
     }
 
     @OneToMany(mappedBy = "supplier")
