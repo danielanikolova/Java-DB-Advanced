@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Allopurinol",
+    "price": 518.50,
+    "seller": {
+      "firstName": "Patricia",
+      "lastName": "Cooper"
+    }
+  },
+  {
+    "name": "Agaricus Equisetum Special Order",
+    "price": 585.93,
+    "seller": {
+      "firstName": "Brenda",
+      "lastName": "Howell"
+    }
+  },
+  {
+    "name": "Glipizide",
+    "price": 621.78,
+    "seller": {
+      "firstName": "Patricia",
+      "lastName": "Fuller"
+    }
+  },
+  {
+    "name": "CALMING DIAPER RASH",
+    "price": 700.92,
+    "seller": {
+      "firstName": "Jean",
+      "lastName": "Henry"
+    }
+  },
+  {
+    "name": "Warfarin Sodium",
+    "price": 770.05,
+    "seller": {
+      "firstName": "Marie",
+      "lastName": "Williamson"
+    }
+  },
+  {
+    "name": "Care One Hemorrhoidal",
+    "price": 932.18,
+    "seller": {
+      "firstName": "Patricia",
+      "lastName": "Fuller"
+    }
+  }
+]
