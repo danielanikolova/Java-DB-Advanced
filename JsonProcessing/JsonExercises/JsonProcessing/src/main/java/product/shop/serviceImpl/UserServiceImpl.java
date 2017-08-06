@@ -109,7 +109,7 @@ public class UserServiceImpl implements UserService{
 
         for (Object[] obj:userIdAndProductsCount) {
 
-            Long userId = Long.parseLong((String) obj[0]);
+            Long userId = Long.parseLong(obj[0].toString());
             User user = this.userRepository.findOne(userId);
             UsersWithSoldProducts userInfoAndSoldProductsDto = ModelParser.getInstance()
                     .map(user, UsersWithSoldProducts.class);
@@ -119,6 +119,8 @@ public class UserServiceImpl implements UserService{
         }
 
         UsersCountDto usersCountDto = new UsersCountDto();
+
+        usersCountDto.setCount(userList.size());
 
         usersCountDto.setUsers(userList);
 

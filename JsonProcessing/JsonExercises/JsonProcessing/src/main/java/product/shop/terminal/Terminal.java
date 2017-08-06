@@ -10,6 +10,7 @@ import product.shop.dtoModels.bindingModels.Add.UserAddDto;
 import product.shop.dtoModels.bindingModels.CategoryDto;
 import product.shop.dtoModels.bindingModels.UserDto;
 import product.shop.dtoModels.viewModels.*;
+import product.shop.dtoModels.viewModels.Problem4.UsersCountDto;
 import product.shop.io.JsonParser;
 import product.shop.servicies.CategoryService;
 import product.shop.servicies.ProductService;
@@ -44,18 +45,21 @@ public class Terminal implements CommandLineRunner {
 //
 //        export();
 
-        exportProductsInRange();
+ //       exportProductsInRange();
 
  //       exportSellersWithProducts();
   //      exportCategoriesByProductsCount();
 
- //       exportUserWithAtLeastOneSoldProductCount();
+       exportUserWithAtLeastOneSoldProductCount();
 
 
     }
 
     private  void exportUserWithAtLeastOneSoldProductCount(){
 
+        UsersCountDto usersCountDtos = this.userService.findUsersCount();
+
+        this.jsonParser.writeObject(usersCountDtos, "/src/main/resources/files.out/problem4.json");
 
     }
 
