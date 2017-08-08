@@ -48,6 +48,12 @@ public class Terminal implements CommandLineRunner{
 //        getTotalSaleByCustomer();
  //       getSalesWithDiscount();
 
+        List<Car> cars = this.carService.findAll();
+
+        for (Car car:cars) {
+            System.out.println(car.toString());
+        }
+
     }
 
 
